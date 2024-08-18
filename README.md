@@ -69,3 +69,12 @@ This project demonstrates the creation of a simple real-time chat application us
    cd ../client
    npm install
    ```
+
+3. **Start the server and client**
+
+   ```bash
+    cd server
+    npm start
+    cd client
+    npm start
+   ```
