@@ -1,0 +1,18 @@
+.messages {
+  padding: 5% 0;
+  overflow: auto;
+  flex: auto;
+  height: 600;
+  width: 400;
+}
+
+.noMessages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #d41f1f;
+  font-size: 1.2em;
+  font-style: italic;
+  font-family: "Arial", sans-serif;
+}

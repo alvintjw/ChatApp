@@ -10,6 +10,45 @@ This project demonstrates the creation of a simple real-time chat application us
 - **Socket.IO integration**: The app uses Socket.IO for WebSocket communication, allowing low-latency interactions between the client and server.
 - **Dynamic room assignment**: Users can join specific chat rooms based on the room name provided in the query parameters.
 
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed on your machine.
+- Basic knowledge of React, Node.js, and WebSockets.
+
+### Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/chat-app.git
+
+   ```
+
+2. **Install dependecies for both client and server**
+
+   ```bash
+   cd server
+   npm install
+   cd ../client
+   npm install
+   ```
+
+3. **Start the server first then the client**
+
+   ```bash
+    cd server
+    npm start
+    cd client
+    npm start
+   ```
+
+4. **Access the application**
+
+- Open your browser and navigate to http://localhost:3000.
+- Enter your name and room to join a chat.
+
 ## Interaction Flow
 
 ### 1. **Client-Side Interaction**
@@ -44,37 +83,3 @@ This project demonstrates the creation of a simple real-time chat application us
   - When a client connects, the server logs a message indicating a new connection.
   - The server listens for the `"join"` event from the client. Upon receiving this event, the server logs the `name` and `room` sent by the client.
   - The server also listens for the `"disconnect"` event, which is triggered when a user leaves the chat, logging a message indicating that the user has disconnected.
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js and npm installed on your machine.
-- Basic knowledge of React, Node.js, and WebSockets.
-
-### Installation
-
-1. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/yourusername/chat-app.git
-
-   ```
-
-2. **Install dependecies for both client and server**
-
-   ```bash
-   cd server
-   npm install
-   cd ../client
-   npm install
-   ```
-
-3. **Start the server and client**
-
-   ```bash
-    cd server
-    npm start
-    cd client
-    npm start
-   ```

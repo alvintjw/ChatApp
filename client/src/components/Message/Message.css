@@ -1,0 +1,63 @@
+.messageContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.justifyStart {
+  justify-content: flex-start;
+}
+
+.messageBox {
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  word-wrap: break-word;
+  background-color: #f3f3f3;
+  color: #353535;
+}
+
+.backgroundBlue {
+  background-color: #2979ff;
+  color: white;
+}
+
+.backgroundLight {
+  background-color: #e3e3e3;
+  color: #353535;
+}
+
+.messageText {
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.colorDark {
+  color: #353535;
+}
+
+.sentText {
+  display: flex;
+  align-items: center;
+  font-family: Helvetica;
+  color: #828282;
+  letter-spacing: 0.3px;
+  margin: 0 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
