@@ -67,6 +67,7 @@ This project demonstrates the creation of a simple real-time chat application us
 
   - A WebSocket connection is established to the server running at `localhost:5000`.
   - The client emits a `"join"` event to the server, sending the `name` and `room` data.
+  - The client emits a "sendMessage" event to the server, sending the message and user data.
 
 - **Cleanup on Unmount**:
   - If the user navigates away from the chat page, the component unmounts.
@@ -80,6 +81,9 @@ This project demonstrates the creation of a simple real-time chat application us
   - The server listens on a specified port (default: 5000).
 
 - **Handling Connections**:
+
   - When a client connects, the server logs a message indicating a new connection.
   - The server listens for the `"join"` event from the client. Upon receiving this event, the server logs the `name` and `room` sent by the client.
+  - The server listens for the `"sendMessage"` from the client. Upon receiving this event, the server will update emit the message to all clients in the same room as the sender. It will then execute the callback function provided by the client to acknowledge that the message was successfully received and broadcasted.
+
   - The server also listens for the `"disconnect"` event, which is triggered when a user leaves the chat, logging a message indicating that the user has disconnected.
