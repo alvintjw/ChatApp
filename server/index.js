@@ -16,14 +16,20 @@ const server = http.createServer(app);
 // Initialize Socket.IO with CORS settings to allow connections from the client
 const io = socketio(server, {
   cors: {
-    origin: "https://66cab08b2f99f14ea790fd31--alvinreactchatapp.netlify.app/", // Allow requests from the client running on localhost:3000
+    origin: /\.netlify.app$/, // Allow requests from the client running on localhost:3000
     methods: ["GET", "POST"], // Allowable HTTP methods
     credentials: true, // Allow credentials (cookies, authorization headers)
   },
 });
 
 // Enable CORS for all HTTP routes handled by Express
-app.use(cors());
+app.use(
+  cors({
+    origin: /\.netlify.app$/,
+    methods: ["GET", "POST"],
+    credentials: true,
+  })
+);
 app.use(router);
 
 // Start the server and listen on the specified port
