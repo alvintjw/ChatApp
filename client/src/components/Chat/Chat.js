@@ -22,7 +22,7 @@ const Chat = () => {
   const [messages, setMessages] = useState([]);
 
   // The endpoint where the Socket.IO server is running
-  const ENDPOINT = "localhost:5000";
+  const ENDPOINT = "https://chatapp-production-7b76.up.railway.app/";
 
   // useLocation is used to access the query parameters from the URL
   const location = useLocation();
