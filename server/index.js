@@ -16,7 +16,7 @@ const server = http.createServer(app);
 // Initialize Socket.IO with CORS settings to allow connections from the client
 const io = socketio(server, {
   cors: {
-    origin: "http://localhost:3000", // Allow requests from the client running on localhost:3000
+    origin: "https://66cab08b2f99f14ea790fd31--alvinreactchatapp.netlify.app/", // Allow requests from the client running on localhost:3000
     methods: ["GET", "POST"], // Allowable HTTP methods
     credentials: true, // Allow credentials (cookies, authorization headers)
   },
