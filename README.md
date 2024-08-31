@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates the creation of a simple real-time chat application using React on the client side and Node.js with Express and Socket.IO on the server side. The application allows users to join a chat room by providing their name and room name. The interaction between the client and server is handled using WebSockets, which facilitates real-time, bi-directional communication. This Project serves for me to learn the following things: React, Node.js, Real Time Chat Feature as well as deployment.
+This project demonstrates the creation of a simple real-time chat application using React on the client side and Node.js with Express and Socket.IO on the server side. The application allows users to join a chat room by providing their name and room name. The interaction between the client and server is handled using WebSockets, which facilitates real-time, bi-directional communication. This Project serves for me to learn the following things: React, Node.js, Real Time Chat Feature as well as Deployment using Railway and Netlify. If you want to test the chatApp without cloning the repo, simply click [here](https://alvinreactchatapp.netlify.app/).
 
 ## Features
 
@@ -34,8 +34,12 @@ This project demonstrates the creation of a simple real-time chat application us
    cd ../client
    npm install
    ```
-
-3. **Start the server first then the client**
+3. **Changing the ENDPOINT back to local server
+   - Navigate to Client -> Components -> Chat -> Chat.js
+   - Change the line from `const ENDPOINT = "https://chatapp-production-7b76.up.railway.app/"` to `const ENDPOINT = "localhost:5000";`
+   - Navigate to Server -> Index.js
+   - Change the lines with ` origin: /\.netlify.app$/` to ` origin: https://localhost:3000`.
+4. **Start the server first then the client**
 
    ```bash
     cd server
@@ -44,7 +48,7 @@ This project demonstrates the creation of a simple real-time chat application us
     npm start
    ```
 
-4. **Access the application**
+5. **Access the application**
 
 - Open your browser and navigate to http://localhost:3000.
 - Enter your name and room to join a chat.
