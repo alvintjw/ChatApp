@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates the creation of a simple real-time chat application using React on the client side and Node.js with Express and Socket.IO on the server side. The application allows users to join a chat room by providing their name and room name. The interaction between the client and server is handled using WebSockets, which facilitates real-time, bi-directional communication.
+This project demonstrates the creation of a simple real-time chat application using React on the client side and Node.js with Express and Socket.IO on the server side. The application allows users to join a chat room by providing their name and room name. The interaction between the client and server is handled using WebSockets, which facilitates real-time, bi-directional communication. This Project serves for me to learn the following things: React, Node.js, Real Time Chat Feature as well as deployment.
 
 ## Features
 
